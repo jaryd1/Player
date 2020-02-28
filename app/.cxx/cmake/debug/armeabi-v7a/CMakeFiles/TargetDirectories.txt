@@ -1,0 +1,6 @@
+D:/AndroidStudioProjects/Player/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/AndroidStudioProjects/Player/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/player.dir
+D:/AndroidStudioProjects/Player/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/AndroidStudioProjects/Player/app/.cxx/cmake/debug/armeabi-v7a/soundtouch/CMakeFiles/soundtouch.dir
+D:/AndroidStudioProjects/Player/app/.cxx/cmake/debug/armeabi-v7a/soundtouch/CMakeFiles/edit_cache.dir
+D:/AndroidStudioProjects/Player/app/.cxx/cmake/debug/armeabi-v7a/soundtouch/CMakeFiles/rebuild_cache.dir

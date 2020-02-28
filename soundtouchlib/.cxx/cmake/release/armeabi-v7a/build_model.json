@@ -1,0 +1,72 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "D:\\AndroidStudioProjects\\Player",
+      "sdkFolder": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\build\\intermediates",
+      "gradleModulePathName": ":soundtouchlib",
+      "moduleRootFolder": "D:\\AndroidStudioProjects\\Player\\soundtouchlib",
+      "makeFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "D:\\AndroidStudioProjects\\Player\\.cxx",
+      "cxxFolder": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx",
+      "ndkFolder": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\ndk-bundle",
+      "ndkVersion": "16.1.4479499",
+      "ndkSupportedAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "MIPS",
+        "MIPS64",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      "-std\u003dc++11"
+    ],
+    "variantName": "release",
+    "soFolder": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\build\\intermediates\\cmake\\release\\lib",
+    "objFolder": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\build\\intermediates\\cmake\\release\\obj",
+    "jsonFolder": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release",
+    "gradleBuildOutputFolder": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cxx\\release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release\\armeabi-v7a",
+  "jsonFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release\\armeabi-v7a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cxx\\release\\armeabi-v7a",
+  "objFolder": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a",
+  "buildCommandFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release\\armeabi-v7a\\build_command.txt",
+  "buildOutputFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release\\armeabi-v7a\\build_output.txt",
+  "modelOutputFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release\\armeabi-v7a\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cxx\\release\\armeabi-v7a\\CMakeLists.txt",
+    "toolchainWrapperFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cxx\\release\\armeabi-v7a\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cxx\\release\\armeabi-v7a\\build_generation_state.json",
+    "cacheKeyFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cxx\\release\\armeabi-v7a\\compiler_cache_key.json",
+    "compilerCacheUseFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cxx\\release\\armeabi-v7a\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cxx\\release\\armeabi-v7a\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cxx\\release\\armeabi-v7a\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release\\armeabi-v7a\\json_generation_record.json",
+  "compileCommandsJsonFile": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release\\armeabi-v7a\\compile_commands.json"
+}

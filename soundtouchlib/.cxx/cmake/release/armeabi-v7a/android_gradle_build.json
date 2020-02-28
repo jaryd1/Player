@@ -1,0 +1,106 @@
+{
+  "stringTable": {
+    "0": "D:/AndroidStudioProjects/Player/soundtouchlib/.cxx/cmake/release/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sysroot -Dsoundtouch_EXPORTS -ID:/AndroidStudioProjects/Player/soundtouchlib/src/main/cpp/include -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -Os -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+    "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "soundtouch-Release-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\release\\armeabi-v7a\" soundtouch",
+      "buildType": "release",
+      "toolchain": "2616000226",
+      "abi": "armeabi-v7a",
+      "artifactName": "soundtouch",
+      "files": [
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\AAFilter.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\BPMDetect.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\cpu_detect_x86.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\FIFOSampleBuffer.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\FIRFilter.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\InterpolateCubic.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\InterpolateLinear.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\InterpolateShannon.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\mmx_optimized.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\PeakFinder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\RateTransposer.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\SoundTouch.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\sse_optimized.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\main\\cpp\\TDStretch.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libsoundtouch.so"
+    }
+  },
+  "toolchains": {
+    "2616000226": {
+      "cppCompilerExecutable": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

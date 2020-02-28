@@ -1,0 +1,18 @@
+{
+  "buildFiles": [
+    "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+    "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\src\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\debug\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\debug\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "soundtouch-Debug-armeabi-v7a": {
+      "artifactName": "soundtouch",
+      "buildCommand": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidStudioProjects\\Player\\soundtouchlib\\.cxx\\cmake\\debug\\armeabi-v7a\" soundtouch",
+      "abi": "armeabi-v7a",
+      "output": "D:\\AndroidStudioProjects\\Player\\soundtouchlib\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libsoundtouch.so"
+    }
+  }
+}

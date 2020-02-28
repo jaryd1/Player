@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewparent"
+        tools:context=".MainActivity">
+    <com.c.player.MySurface
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/surface"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal">
+
+     <androidx.appcompat.widget.AppCompatTextView
+         android:id="@+id/ct"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+         android:layout_marginLeft="8dp"
+         android:textSize="12sp"
+         android:textColor="#ffffff"/>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:secondaryProgressTint="#ffffff"
+        android:id="@+id/bar"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:textSize="12sp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorAccent"
+        />
+</FrameLayout>

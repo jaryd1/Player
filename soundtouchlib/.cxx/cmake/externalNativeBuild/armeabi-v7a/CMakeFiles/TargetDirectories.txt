@@ -1,0 +1,3 @@
+D:/AndroidStudioProjects/Player/soundtouchlib/.cxx/cmake/externalNativeBuild/armeabi-v7a/CMakeFiles/soundtouch.dir
+D:/AndroidStudioProjects/Player/soundtouchlib/.cxx/cmake/externalNativeBuild/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/AndroidStudioProjects/Player/soundtouchlib/.cxx/cmake/externalNativeBuild/armeabi-v7a/CMakeFiles/rebuild_cache.dir

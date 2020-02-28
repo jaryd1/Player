@@ -1,0 +1,16 @@
+ninja: Entering directory `D:\AndroidStudioProjects\Player\soundtouchlib\.cxx\cmake\debug\armeabi-v7a'
+[1/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/cpu_detect_x86.cpp.o
+[2/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/InterpolateCubic.cpp.o
+[3/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/AAFilter.cpp.o
+[4/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/FIRFilter.cpp.o
+[5/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/FIFOSampleBuffer.cpp.o
+[6/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/BPMDetect.cpp.o
+[7/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/PeakFinder.cpp.o
+[8/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/InterpolateLinear.cpp.o
+[9/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/mmx_optimized.cpp.o
+[10/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/InterpolateShannon.cpp.o
+[11/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/sse_optimized.cpp.o
+[12/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/RateTransposer.cpp.o
+[13/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/TDStretch.cpp.o
+[14/15] Building CXX object CMakeFiles/soundtouch.dir/main/cpp/SoundTouch.cpp.o
+[15/15] Linking CXX shared library D:\AndroidStudioProjects\Player\soundtouchlib\build\intermediates\cmake\debug\obj\armeabi-v7a\libsoundtouch.so

@@ -1,0 +1,198 @@
+{
+  "stringTable": {
+    "0": "D:/AndroidStudioProjects/Player/app/.cxx/cmake/debug/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sysroot -Dplayer_EXPORTS -ID:/AndroidStudioProjects/Player/app/src/main/cpp../../cpp/include -ID:/AndroidStudioProjects/Player/app/src/main/cpp../../../../../ffmpeglib/src/main/cpp/ffmpeg -ID:/AndroidStudioProjects/Player/app/src/main/cpp../../../../../ffmpeglib/src/main/cpp/include -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -O0 -fno-limit-debug-info -fPIC",
+    "2": "--target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sysroot -Dplayer_EXPORTS -ID:/AndroidStudioProjects/Player/app/src/main/cpp../../cpp/include -ID:/AndroidStudioProjects/Player/app/src/main/cpp../../../../../ffmpeglib/src/main/cpp/ffmpeg -ID:/AndroidStudioProjects/Player/app/src/main/cpp../../../../../ffmpeglib/src/main/cpp/include -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "3": "--target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sysroot -Dsoundtouch_EXPORTS -ID:/AndroidStudioProjects/Player/app/src/main/cpp../../cpp/include -ID:/AndroidStudioProjects/Player/app/src/main/cpp../../../../../ffmpeglib/src/main/cpp/ffmpeg -ID:/AndroidStudioProjects/Player/app/src/main/cpp../../../../../ffmpeglib/src/main/cpp/include -ID:/AndroidStudioProjects/Player/app/src/main/cpp/soundtouch/include -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward -isystem C:/Users/Liujy/AppData/Local/Android/android-sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+    "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\CMakeLists.txt",
+    "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidStudioProjects\\Player\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidStudioProjects\\Player\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "player-Debug-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidStudioProjects\\Player\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" player",
+      "buildType": "debug",
+      "toolchain": "1002052476",
+      "abi": "armeabi-v7a",
+      "artifactName": "player",
+      "files": [
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\VideoDecoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\Media.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\player.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\EglCore.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\OpenglHelp.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\OpenslHelp.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\YUVSpliter.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\MediaDocoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\AudioDecoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\Displayer.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\MediaSyner.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\AllDecoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\JavaCallBack.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\MediaClock.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\sonic.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\AndroidStudioProjects\\Player\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libplayer.so"
+    },
+    "soundtouch-Debug-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidStudioProjects\\Player\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" soundtouch",
+      "buildType": "debug",
+      "toolchain": "1002052476",
+      "abi": "armeabi-v7a",
+      "artifactName": "soundtouch",
+      "files": [
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\AAFilter.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\BPMDetect.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\cpu_detect_x86.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\FIFOSampleBuffer.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\FIRFilter.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\InterpolateCubic.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\InterpolateLinear.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\InterpolateShannon.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\mmx_optimized.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\PeakFinder.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\RateTransposer.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\SoundTouch.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\sse_optimized.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\AndroidStudioProjects\\Player\\app\\src\\main\\cpp\\soundtouch\\TDStretch.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\AndroidStudioProjects\\Player\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libsoundtouch.so"
+    }
+  },
+  "toolchains": {
+    "1002052476": {
+      "cCompilerExecutable": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\Liujy\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

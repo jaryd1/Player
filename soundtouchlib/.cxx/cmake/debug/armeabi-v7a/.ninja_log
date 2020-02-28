@@ -1,0 +1,16 @@
+# ninja log v5
+3	5656	594036790	CMakeFiles/soundtouch.dir/main/cpp/cpu_detect_x86.cpp.o	1e7e80bca201e341
+6	6917	594036791	CMakeFiles/soundtouch.dir/main/cpp/InterpolateCubic.cpp.o	575add96feae7f9
+0	6931	594036791	CMakeFiles/soundtouch.dir/main/cpp/AAFilter.cpp.o	286acedd46f68729
+4	6932	594036791	CMakeFiles/soundtouch.dir/main/cpp/FIRFilter.cpp.o	1a789dd9e869ce09
+5	7056	594036791	CMakeFiles/soundtouch.dir/main/cpp/FIFOSampleBuffer.cpp.o	9ce1ef820a6d6c25
+2	7217	594036791	CMakeFiles/soundtouch.dir/main/cpp/BPMDetect.cpp.o	65aaaa68a096b2ab
+6917	7224	594036791	CMakeFiles/soundtouch.dir/main/cpp/PeakFinder.cpp.o	d7f0cec3449fba1f
+5657	7368	594036791	CMakeFiles/soundtouch.dir/main/cpp/InterpolateLinear.cpp.o	817f61556daee2f5
+6933	7504	594036791	CMakeFiles/soundtouch.dir/main/cpp/mmx_optimized.cpp.o	5f3171a387558a21
+6931	7730	594036792	CMakeFiles/soundtouch.dir/main/cpp/InterpolateShannon.cpp.o	1f095286e24f6711
+7218	7806	594036792	CMakeFiles/soundtouch.dir/main/cpp/sse_optimized.cpp.o	494caf11b2894cfc
+7056	7970	594036792	CMakeFiles/soundtouch.dir/main/cpp/RateTransposer.cpp.o	591b2b2e5d639d3d
+7224	7977	594036792	CMakeFiles/soundtouch.dir/main/cpp/TDStretch.cpp.o	a1b2309a2fcf328b
+7369	8175	594036792	CMakeFiles/soundtouch.dir/main/cpp/SoundTouch.cpp.o	8fbbe2bda118bf93
+8175	8486	594036793	D:/AndroidStudioProjects/Player/soundtouchlib/build/intermediates/cmake/debug/obj/armeabi-v7a/libsoundtouch.so	c672230b17be2e9d
