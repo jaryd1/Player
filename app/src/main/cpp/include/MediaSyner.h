@@ -32,6 +32,7 @@ private:
     void callbackTimeUpdate();
 
     volatile  bool paused = false;
+    volatile  bool has_preview_frame = false;
     MediaClock* audioClock;
     MediaClock* videoClock;
 private:
@@ -47,6 +48,7 @@ public:
     void showLoading();
     void hideLoading();
     int processAudio(AudioFrame* audioFrame);
+    void processKeyFrame(AVFrame* frame) override;
     void updateVideoSize(int width,int height);
 public:
     void seekPosision(float position);

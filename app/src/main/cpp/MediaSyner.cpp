@@ -20,6 +20,8 @@ MediaSyner::MediaSyner(MediaCallBack* mediaCallBack) {
 void MediaSyner::init(char*url) {
     LOGE("url %s",url);
     decoder->init(url);
+
+
     if(decoder->isValidVideo()){
         javaCallBack->setVideoSize(decoder->getVideoWidth(),decoder->getVideoHeight());
         mediaCallBack->initDisplayer(decoder->getVideoWidth(),decoder->getVideoHeight());
@@ -33,6 +35,7 @@ void MediaSyner::init(char*url) {
     javaCallBack->callDuration(decoder->getDuration());
     std::thread decode(&MediaSyner::decode,this);
     decode.detach();
+
 }
 
 
@@ -79,6 +82,10 @@ int MediaSyner::processAudio(AudioFrame* audioFrame) {
     return len;
 }
 
+void MediaSyner::processKeyFrame(AVFrame *frame) {
+    mediaCallBack->displayPreviewFrame(frame);
+}
+
 void MediaSyner::updateVideoSize(int width, int height) {
     javaCallBack->setVideoSize(width,height);
 }
@@ -90,10 +97,13 @@ void MediaSyner::togglePlaying(bool play) {
 }
 
 void MediaSyner::decode() {
-
+    LOGE("start decode");
     while(true) {
         std::unique_lock<std::mutex> lck(mMuxter);
-        mCond.wait(lck);
+        if(has_preview_frame)
+            mCond.wait(lck);
+        else
+            has_preview_frame = true;
         lck.unlock();
         if(!decoder->isEof()) {
             decoder->decode();
@@ -102,7 +112,6 @@ void MediaSyner::decode() {
         }
     }
     LOGE("decode finish");
-
 }
 
 void MediaSyner::setSpeed(float speed) {
@@ -145,9 +154,7 @@ void MediaSyner::callbackTimeUpdate() {
 
 
 double MediaSyner::fillVideoData(AVFrame **frame) {
-    if(!decoder->isValidAudio()){
-        notify();
-    }
+    notify();
     double sleep_time;
     if(!isLoading){
         sleep_time =  decoder->fillVideoData(frame);

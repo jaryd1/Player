@@ -7,10 +7,11 @@
         android:layout_height="match_parent"
         android:id="@+id/viewparent"
         tools:context=".MainActivity">
+
     <com.c.player.MySurface
+        android:id="@+id/surface"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/surface"/>
+        android:layout_height="match_parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,12 +44,13 @@
             android:textSize="12sp"
             android:textColor="#ffffff"/>
     </LinearLayout>
+
     <Button
         android:id="@+id/btn"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="180dp"
         android:background="@color/colorAccent"
-        />
+        android:visibility="visible" />
 </FrameLayout>

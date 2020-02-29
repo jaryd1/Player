@@ -34,16 +34,18 @@ private:
     GLImageFilter* image = NULL;
     YUVImageFilter* yuv = NULL;
     RenderManager* render = NULL;
-    std::mutex mMutex;
     std::condition_variable mCond;
+    std::mutex preview_mutex;
     getFrameCallback  callback;
     void *ctx;
-    void renerLoop();
+    void renderLoop();
     volatile bool inited;
     int width,height;
-
+    volatile bool rendering;
+    AVFrame* preview_frame = NULL;
     void showOpengl(AVFrame* frame);
     void updateTexture(AVFrame* frame);
+
 public:
     void SurfaceCreated(ANativeWindow*window);
     void showFrame(AVFrame* frame);
@@ -51,6 +53,10 @@ public:
     void notify();
     void updateDisPlaySize();
     bool isInited(){return inited;}
+    void setRendering(bool render){ rendering = render;}
+    void start();
+    void updatePreviewFrame(AVFrame* frame){preview_frame = frame;}
+
 
 };
 #endif //PLAYER_DISPLAYER_H

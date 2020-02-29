@@ -106,12 +106,16 @@ void OpenslHelp::open(AudioSpec*spec,getPCMCallback pcmCallback,void*ctx) {
 
     (*queue)->RegisterCallback(queue,PcmCall,this);
 
+    LOGE("init opensl success");
+    start();
+
+}
+
+void OpenslHelp::start() {
     //设置为播放状态
     (*player_itf)->SetPlayState(player_itf,SL_PLAYSTATE_PLAYING);
 
     (*queue)->Enqueue(queue,"",1);
-    LOGE("init opensl success");
-
 }
 
 

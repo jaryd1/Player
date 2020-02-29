@@ -8,20 +8,32 @@ Media::Media() {
     syner = new MediaSyner(this);
     display = new Displayer();
     audio = new OpenslHelp();
+    isPlaying = false;
 }
 
 
 void Media::init() {
     initSyner();
-    isPlaying = true;
+
 }
 
 void Media::initDisplayer(int width,int height) {
     display->open(width,height,VideoCallBack,this);
+    display->setRendering(isPlaying);
 }
 
 void Media::initAudio(AudioSpec* spec) {
     audio->open(spec,AudioCallBack,this);
+    audio->togglePlayState(isPlaying);
+}
+
+void Media::displayPreviewFrame(AVFrame *frame) {
+    if(!draw_first_frame && !isPlaying){
+        display->updatePreviewFrame(frame);
+        display->notify();
+        LOGE("draw first frame");
+        draw_first_frame = true;
+    }
 }
 
 void Media::initSyner() {
@@ -31,6 +43,11 @@ void Media::initSyner() {
 void Media::togglePlay() {
     isPlaying = !isPlaying;
     syner->togglePlaying(isPlaying);
+
+
+    if(display){
+        display->setRendering(isPlaying);
+    }
 
     if(audio){
         audio->togglePlayState(isPlaying);

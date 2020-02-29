@@ -34,28 +34,37 @@ void Displayer::open(int width,int height,getFrameCallback frameCallback,void*ct
         EglCore::doneCurrent();
         inited = 1;
         VideoTexture  = new Texture();
-        std::thread render(&Displayer::renerLoop,this);
-        render.detach();
+        rendering = true;
+
+        start();
+
+}
+
+void Displayer::start() {
+    std::thread render(&Displayer::renderLoop, this);
+    render.detach();
 }
 
 
-void Displayer::renerLoop() {
+void Displayer::renderLoop() {
+    std::unique_lock<std::mutex> lk(preview_mutex);
+    mCond.wait(lk);
+    lk.unlock();
+    updateTexture(preview_frame);
+    render->renderToWindow(VideoTexture,surface);
     while(true) {
-        AVFrame *frame;
-        if(callback == NULL){
-            LOGE("call back null");
-        }
-        if(ctx == NULL){
-            LOGE("ctx null");
-        }
-        double sleep_time = callback(&frame,ctx);
-        if(sleep_time == -1){
-            break;
-        }
-        av_usleep(sleep_time*1000000);
-        if(frame) {
-            showFrame(frame);
-        }
+            if (!rendering) continue;
+            AVFrame *frame;
+            double sleep_time = callback(&frame, ctx);
+            if (sleep_time == -1) {
+                rendering = false;
+                break;
+            }
+            av_usleep(sleep_time * 1000000);
+            if (frame) {
+                showFrame(frame);
+            }
+
     }
     LOGE("render finish");
 }

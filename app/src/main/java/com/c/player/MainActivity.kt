@@ -5,8 +5,6 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.os.Environment
-import android.view.View
 import android.view.WindowManager
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
@@ -43,9 +41,8 @@ class MainActivity : AppCompatActivity() {
 
         })
         btn.setOnClickListener {
-
+            surface.play()
         }
-        btn.visibility = View.GONE
 
         surface.resigerCall(object :MySurface.TimeCallBack{
             override fun onGetVidoeSize(width: Int, height: Int) {
@@ -97,14 +94,14 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         check()
 //        surface?.prepare()
-        surface.setDataSource(
-            Environment.getExternalStorageDirectory().absolutePath
-        +"/tc.flv"
-        )
-
-//        surface!!.setDataSource(
-//           "http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4"
+//        surface.setDataSource(
+//            Environment.getExternalStorageDirectory().absolutePath
+//        +"/tc.flv"
 //        )
+
+        surface!!.setDataSource(
+           "http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4"
+        )
     }
 
     fun generateStandardTime(totalSeconds: Int): String {

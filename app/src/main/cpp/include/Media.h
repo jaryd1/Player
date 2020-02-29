@@ -22,6 +22,7 @@ class Media:public MediaCallBack{
 public:
     void initDisplayer(int width,int height) override ;
     void initAudio(AudioSpec* spec) override ;
+    void displayPreviewFrame(AVFrame* frame) override ;
 public:
     Media();
     MediaSyner* syner;
@@ -41,6 +42,7 @@ public:
     void updateDisplaySize(){ display->updateDisPlaySize();};
 private:
     bool isPlaying = false;
+    bool draw_first_frame = false;
     void init();
     void initSyner();
     static double VideoCallBack(AVFrame**pAvFrame,void* ctx);

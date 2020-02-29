@@ -154,7 +154,8 @@ void GLImageFilter::drawFrame(GLuint textureId) {
 
 GLuint GLImageFilter::drawFrameBuffer(GLuint textureid) {
     GLuint status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
-    LOGE("status 0x%x",status);
+    if(status != GL_FRAMEBUFFER_COMPLETE)
+        LOGE("framebuffer status error 0x%x",status);
     glBindFramebuffer(GL_FRAMEBUFFER,Fbo);
     OpenglHelp::checkError("check bind");
     glUseProgram(program);

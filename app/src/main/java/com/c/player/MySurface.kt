@@ -1,12 +1,12 @@
 package com.c.player
 
 import android.content.Context
-import android.opengl.GLSurfaceView
+import android.graphics.SurfaceTexture
 import android.util.AttributeSet
 import android.view.Surface
-import android.view.SurfaceHolder
+import android.view.TextureView
 
-class MySurface(mContext: Context,attrs: AttributeSet?):GLSurfaceView(mContext,attrs),SurfaceHolder.Callback
+class MySurface(mContext: Context,attrs: AttributeSet?):TextureView(mContext,attrs),TextureView.SurfaceTextureListener
             {
 
 
@@ -28,7 +28,7 @@ class MySurface(mContext: Context,attrs: AttributeSet?):GLSurfaceView(mContext,a
     }
 
     init {
-        holder.addCallback(this)
+        surfaceTextureListener = this
     }
 
     fun resigerCall(callBack: TimeCallBack){
@@ -51,16 +51,29 @@ class MySurface(mContext: Context,attrs: AttributeSet?):GLSurfaceView(mContext,a
         callBack?.onGetVidoeSize(width, height)
     }
 
-    override fun surfaceChanged(p0: SurfaceHolder?, p1: Int, p2: Int, p3: Int) {
+    override fun onSurfaceTextureSizeChanged(
+        surface: SurfaceTexture?,
+        width: Int,
+        height: Int
+    ) {
         _updateDisplaySize()
     }
 
-    override fun surfaceDestroyed(p0: SurfaceHolder?) {
+    override fun onSurfaceTextureUpdated(surface: SurfaceTexture?) {
     }
 
-    override fun surfaceCreated(p0: SurfaceHolder?) {
-        _setSurface(p0!!.surface)
+    override fun onSurfaceTextureDestroyed(surface: SurfaceTexture?): Boolean {
+        return true
     }
+
+    override fun onSurfaceTextureAvailable(
+        surface: SurfaceTexture?,
+        width: Int,
+        height: Int
+    ) {
+        _setSurface(Surface(surface!!))
+    }
+
 
     fun setDataSource(source:String){
         _setDataSource(source)
@@ -93,4 +106,6 @@ class MySurface(mContext: Context,attrs: AttributeSet?):GLSurfaceView(mContext,a
         fun hideLoading()
         fun onGetVidoeSize(width:Int,height:Int);
     }
+
+
 }

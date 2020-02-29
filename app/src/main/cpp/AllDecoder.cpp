@@ -88,7 +88,6 @@ void AllDecoder::initDecoder(MediaDecoder* decoder,int stream_index){
     decoder->stream = fmt_ctx->streams[stream_index];
     decoder->cc_ctx = ctx;
     decoder->cc = cc;
-    LOGE("decoder name %s",cc->long_name);
     ctx->thread_count = 8;
     int ret = 0;
     if((ret = avcodec_open2(ctx,0,0))<0){
@@ -285,6 +284,8 @@ int AllDecoder::handleVideo(AVPacket *avPacket) {
             if(!isValidAudio()){
                 bufferduration += av_frame_get_pkt_duration(frame)*videoDecoder->time_base;
             }
+            if(frame->key_frame)
+                synerCallBack->processKeyFrame(frame);
             videoDecoder->putFrame(frame);
         }else{
             av_frame_free(&frame);

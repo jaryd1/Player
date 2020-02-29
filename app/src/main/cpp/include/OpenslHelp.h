@@ -42,5 +42,6 @@ int GetData(byte *data,int size){
 }
 void togglePlayState(bool playing);
 void stop(){(*player_itf)->SetPlayState(player_itf,SL_PLAYSTATE_STOPPED);}
+void start();
 };
 #endif //PLAYER_OPENSLHELP_H

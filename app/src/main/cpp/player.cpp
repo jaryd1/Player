@@ -22,14 +22,14 @@ Java_com_c_player_MySurface_play(
 }
 
 extern "C"
-JNIEXPORT jint
+JNIEXPORT void
 JNICALL
 Java_com_c_player_MySurface_SeekPosition(
         JNIEnv *env,
         jobject obj,
         jfloat position) {
     media.seekPosition(position);
-    return 0;
+
 }
 
 extern "C"
